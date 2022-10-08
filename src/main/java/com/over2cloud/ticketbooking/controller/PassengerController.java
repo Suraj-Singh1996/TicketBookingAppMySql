@@ -57,5 +57,12 @@ public class PassengerController {
 		
 		ticketService.removeTicket(id);
 	}
+	
+	@GetMapping(value = "/{passangerName}")
+	public TicketEntity getTicketByPassangerName(@PathVariable("passangerName") String passangerName) {
+		
+		return ticketService.findTicketByPassangerName(passangerName);
+				
+	}
 
 }

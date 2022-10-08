@@ -16,4 +16,6 @@ import com.over2cloud.ticketbooking.model.TicketEntity;
 @Repository
 public interface TicketDao extends CrudRepository<TicketEntity, Integer> {
 
+	// Derived Method
+	public TicketEntity findByPassangerName(String passangerName); //Abstract Method
 }

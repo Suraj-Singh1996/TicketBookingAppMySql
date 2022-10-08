@@ -47,4 +47,9 @@ public class TicketService {
 		
 		ticketDao.deleteById(id);
 	}
+	
+	public TicketEntity findTicketByPassangerName(String passangerName) {
+		
+		return ticketDao.findByPassangerName(passangerName);
+	}
 }
